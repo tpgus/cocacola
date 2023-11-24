@@ -1,4 +1,96 @@
+@import '../../styles/common.scss';
+
 .container {
-  min-height: 64px;
-  background-color: blue;
+  height: $header-height;
+  display: flex;
+  padding: 0 120px;
+
+  > .logoWrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  > .navigation {
+    > .menuWrapper {
+      display: flex;
+
+      > .menu {
+        position: relative;
+        min-height: $header-height;
+        display: flex;
+        align-items: center;
+        margin-left: 64px;
+        font-weight: 500;
+        font-size: 14px;
+
+        &:not(:first-child) {
+          margin-left: 40px;
+        }
+        > span {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          position: relative;
+          cursor: pointer;
+
+          &.highlight::after {
+            content: ' ';
+            position: absolute;
+            height: 4px;
+            width: 100%;
+            background-color: black;
+            top: calc(100% - 4px);
+            left: 0;
+            z-index: 30;
+          }
+        }
+        > .icon {
+          margin-left: 8px;
+          transition: transform 0.3s ease;
+
+          &.rotate {
+            transform: rotate(90deg);
+          }
+        }
+        > .dropdown {
+          position: absolute;
+          top: calc($header-height - 1px);
+          left: 0;
+          min-width: 200px;
+          background-color: white;
+          z-index: 20;
+          box-shadow: 0px 0px 24px 0 lightgray;
+          display: none;
+          transition: all 0.3s ease;
+          cursor: initial;
+
+          &.show {
+            display: block;
+          }
+          > .subMenuWrapper {
+            padding: 24px 0;
+
+            > .subMenu {
+              display: flex;
+              align-items: center;
+              font-weight: 400;
+              font-size: 12px;
+              padding: 0 24px;
+              cursor: pointer;
+
+              &:not(:first-child) {
+                margin-top: 8px;
+              }
+              &.highlight {
+                font-weight: bold;
+              }
+              > .icon {
+                margin-left: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
