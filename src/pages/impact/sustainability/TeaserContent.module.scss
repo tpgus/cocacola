@@ -1,0 +1,54 @@
+.container {
+  position: relative;
+  margin-top: 32px;
+  color: white;
+  text-align: -webkit-center;
+
+  > .background {
+    position: relative;
+    display: flex;
+    width: 1280px;
+    height: 600px;
+    border-radius: 16px;
+    overflow: hidden; // 이것은 border-radius를 갖는 요소 내부의 자식 요소들이 부모의 경계를 넘어서는 것을 막습니다.
+    background: center;
+    background-size: cover;
+    background-position: center;
+
+    > .content {
+      position: absolute;
+      align-items: start;
+      width: 50%;
+      top: 50%;
+      left: 15%;
+      transform: translate(-50%, -50%);
+      color: black;
+
+      .textBox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .responsibility {
+        margin-left: 35%;
+        color: white;
+        margin-bottom: 30px;
+        text-align: left;
+      }
+
+      .global {
+        width: 50%;
+        margin-left: 35%;
+        color: black;
+        border-radius: 35px;
+        font-weight: bolder;
+
+        padding: 10px;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
