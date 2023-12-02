@@ -89,8 +89,9 @@ const Header = () => {
               key={index}
               onClick={menu.path ? () => moveToPage(menu.path) : null}
               onMouseEnter={() => setHoverMenuIndex(index)}
-              className={cx(['menu', { highlight: index === currentPageIndex }])}>
-              <span>{menu.title}</span>
+              onMouseLeave={() => setHoverMenuIndex(-1)}
+              className={cx('menu')}>
+              <span className={cx({ highlight: index === currentPageIndex })}>{menu.title}</span>
               {menu.subMenus && (
                 <MdOutlineKeyboardArrowRight size={16} className={cx(['icon', { rotate: index === hoverMenuIndex }])} />
               )}
