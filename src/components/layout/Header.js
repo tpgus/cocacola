@@ -106,7 +106,7 @@ const Header = () => {
                         key={index}
                         onClick={() => moveToPage(subMenu.path)}
                         onMouseEnter={() => setHoverSubMenuIndex(index)}
-                        onMouseLeaver={() => setHoverSubMenuIndex(-1)}
+                        onMouseLeave={() => setHoverSubMenuIndex(-1)}
                         className={cx(['subMenu', { highlight: index === hoverSubMenuIndex }])}>
                         <span>{subMenu.title}</span>
                         {index === hoverSubMenuIndex && (

@@ -1,7 +1,9 @@
 import React from 'react';
 
+import RelatedContent from './RelatedContent';
+
 const Page = () => {
-  return <div>/about/history</div>;
+  return <RelatedContent />;
 };
 
 export default Page;
