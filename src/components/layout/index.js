@@ -10,7 +10,7 @@ const Layout = () => {
   return (
     <>
       <Header />
-      <Header2 />
+      {/* <Header2 /> */}
       <Main>
         <Outlet />
       </Main>

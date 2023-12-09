@@ -1,12 +1,11 @@
 .container {
-  display: contents;
   position: relative;
   margin-bottom: 20px;
 
   > .banner {
-    position: relative;
-    width: 1800;
-    height: 620px;
+    margin: 0 auto;
+    width: 1680px;
+    height: 596px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +19,6 @@
       font-size: 38px;
       line-height: 48px;
       padding: 10px 20px;
-      position: absolute;
     }
   }
 

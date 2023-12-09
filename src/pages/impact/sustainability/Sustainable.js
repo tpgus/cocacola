@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import styles from './Sustainable.module.scss';
-import Card2 from '../../../components/ui/Card2';
+import Card from '../../../components/ui/Card';
 import Sustainable1 from '../../../assets/images/sustainable1.webp';
 import Sustainable2 from '../../../assets/images/sustainable2.webp';
 import Sustainable3 from '../../../assets/images/sustainable3.webp';
@@ -38,7 +38,7 @@ function Sustainable() {
       <h1 className={cx('title')}>코카-콜라의 지속 가능성 분야</h1>
       <div className={cx('cardContainer')}>
         {cardData.map((card) => (
-          <Card2
+          <Card
             key={card.id}
             imageUrl={card.imageUrl} // You will need to import the images or use a path resolver
             title={card.title}

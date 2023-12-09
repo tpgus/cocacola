@@ -40,6 +40,11 @@
         text-decoration: none;
         color: #000000;
         display: inline-block;
+
+        &:hover {
+          border-color: #6e6e6e;
+          color: #6e6e6e;
+        }
       }
     }
   }

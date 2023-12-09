@@ -64,7 +64,6 @@ function Header2() {
       )}
     </li>
   );
-
   // createMenuItem 함수를 사용하여 각 메뉴 항목(Brands, Our Company, Discover, Impact)을 생성하고 렌더링합니다.
   return (
     <div className={cx('container')}>

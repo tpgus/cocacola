@@ -11,7 +11,7 @@ import Company from './pages/about/company';
 import BrandStory from './pages/discover/brand-story';
 import Original from './pages/discover/original';
 // Impact
-import Sustainability from './pages/impact/sustainability/tpgus';
+import Sustainability from './pages/impact/sustainability';
 import Social from './pages/impact/social';
 
 function App() {
