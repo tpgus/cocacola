@@ -5,6 +5,7 @@ import SustainabilityImage from '../../../assets/images/sustainability.webp';
 import teaserConent from '../../../assets/images/teaserContent.webp';
 import TeaserContent from './TeaserContent';
 import Sustainable from './Sustainable';
+import Double from './Double';
 
 const cx = classNames.bind(styles);
 
@@ -25,6 +26,7 @@ const Page = () => {
       </div>
       <TeaserContent teaserConent={teaserConent} />
       <Sustainable />
+      <Double />
     </div>
   );
 };

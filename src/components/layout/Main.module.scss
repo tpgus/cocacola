@@ -1,5 +1,7 @@
+@import '../../styles/common.scss';
+
 .container {
   padding: 0 120px;
-  border: 1px solid black;
+  margin-top: $header-height;
   background: #f3f3f3;
 }

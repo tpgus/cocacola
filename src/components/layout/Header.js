@@ -89,7 +89,10 @@ const Header = () => {
               key={index}
               onClick={menu.path ? () => moveToPage(menu.path) : null}
               onMouseEnter={() => setHoverMenuIndex(index)}
-              onMouseLeave={() => setHoverMenuIndex(-1)}
+              onMouseLeave={() => {
+                setHoverMenuIndex(-1);
+                setHoverSubMenuIndex(-1);
+              }}
               className={cx('menu')}>
               <span className={cx({ highlight: index === currentPageIndex })}>{menu.title}</span>
               {menu.subMenus && (
@@ -103,6 +106,7 @@ const Header = () => {
                         key={index}
                         onClick={() => moveToPage(subMenu.path)}
                         onMouseEnter={() => setHoverSubMenuIndex(index)}
+                        onMouseLeaver={() => setHoverSubMenuIndex(-1)}
                         className={cx(['subMenu', { highlight: index === hoverSubMenuIndex }])}>
                         <span>{subMenu.title}</span>
                         {index === hoverSubMenuIndex && (

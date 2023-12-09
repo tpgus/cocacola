@@ -1,0 +1,80 @@
+.container {
+  position: relative;
+  margin-top: 120px;
+  display: block;
+  justify-content: space-between;
+  text-align: -webkit-center;
+  //   여기
+  position: relative; /* 상대 위치 설정 */
+  overflow: hidden;
+
+  > .title {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 32px;
+    justify-content: center;
+  }
+
+  > .campaign {
+    max-width: 1200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-inline: -16px;
+    padding: 0;
+    // 여기
+    position: relative;
+
+    > .contentContainer {
+      flex: 1;
+      padding: 64px 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 8px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+      //   여기
+      max-width: 600px;
+      position: relative;
+      z-index: 2;
+      margin-right: -10%;
+
+      .contentTitle {
+        font-size: 24px;
+        line-height: 32px;
+      }
+      .contentDescription {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 250px;
+      }
+      .contentLink {
+        max-width: 400px;
+        display: inline-block;
+        padding: 8px 16px;
+        border: 2px solid black;
+        border-radius: 24px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        background-color: transparent;
+      }
+    }
+
+    > .imageContainer {
+      flex: 1;
+      padding: 64px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .campaignImage {
+        width: 550px;
+        height: 550px;
+        object-fit: cover;
+      }
+    }
+  }
+}
