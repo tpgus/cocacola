@@ -2,7 +2,9 @@
   position: relative;
   margin-bottom: 20px;
 
-  > .banner {
+  .banner {
+    // !important를 붙여주면 작동한다.
+    background-image: url('../../../assets/images/sustainability.webp') !important;
     margin: 0 auto;
     width: 1680px;
     height: 596px;

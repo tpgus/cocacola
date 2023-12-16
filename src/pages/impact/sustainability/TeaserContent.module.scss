@@ -5,6 +5,9 @@
   text-align: -webkit-center;
 
   > .background {
+    // 기존 TeaserContent에 있던 자료를 옮겨왓습니다.
+    background: linear-gradient(to right, rgba(0, 1, 1, 1), rgba(0, 0, 0, 0)),
+      url('../../../assets/images/teaserContent.webp') !important;
     position: relative;
     display: flex;
     width: 1280px;
