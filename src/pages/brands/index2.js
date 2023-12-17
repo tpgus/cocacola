@@ -18,7 +18,7 @@ const brands = [
   { name: 'Fanta', image: brands3, brand: 'fanta' },
   { name: 'DrPepper', image: brands4, brand: 'coca' },
   { name: 'Powerade', image: brands5, brand: 'sports' },
-  { name: 'Toreta', image: brands6, brand: 'hydration' },
+  // { name: 'Toreta', image: brands6, brand: 'hydration' },
 ];
 
 // 카테고리 관리 배열
@@ -37,7 +37,12 @@ const Page = () => {
   };
 
   // js filter를 사용해, 선택 된 브랜드만 보여줍니다.
-  const filteredBrands = selectCategory === 'all' ? brands : brands.filter((brand) => brand.brand === selectCategory);
+  // {} 중괄호 사용법 알아보기
+  const filteredBrands = selectCategory === 'all' ? brands : brands.filter(({ brand }) => brand === selectCategory);
+
+  // 중괄호 사용법
+  // (item) => item.brand...
+  // ({item}) => brand...
 
   return (
     <div className={cx('container')}>

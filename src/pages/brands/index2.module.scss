@@ -45,18 +45,30 @@
 
   > .brandContainer {
     // 오늘의 공부는 grid, grid를 자유롭게 사용할 수 있냐가 포인트다.
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
     // gap은 grid의 간격을 조절해준다.
-    gap: 30px;
+    // gap: 30px;
+
+    // 세현님 시작
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    // 세현님 종료
+
     justify-content: center;
     // 75%는 전체 width에서 75%, 코카콜라도 75%다.
     width: 75%;
     // 세현님한테 배운 가운데 정렬 법
+    gap: 20px;
     margin: 0 auto;
     margin-top: 32px;
 
     .brandItem {
+      // 세현님 시작
+      width: 30%;
+      // 세현님 종료
+
       display: flex;
       background: white;
       border-radius: 10px;

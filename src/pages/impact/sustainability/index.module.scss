@@ -3,15 +3,14 @@
   margin-bottom: 20px;
 
   .banner {
-    // !important를 붙여주면 작동한다.
-    background-image: url('../../../assets/images/sustainability.webp') !important;
+    background: center;
+    background-image: url('../../../assets/images/sustainability.webp');
     margin: 0 auto;
     width: 1680px;
     height: 596px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: center;
     background-size: cover; // 배경 이미지가 컨테이너를 꽉 채우도록 설정
     background-repeat: no-repeat; // 이미지 반복 없음
 
