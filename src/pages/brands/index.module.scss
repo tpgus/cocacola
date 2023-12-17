@@ -1,7 +1,11 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   margin: 0 auto;
   max-width: 1120px;
-  padding-top: 120px;
+  padding: 120px 0;
 
   > .title {
     text-align: center;
