@@ -1,2 +1,10 @@
 .container {
+  padding: 32px;
+  position: relative;
+
+  > .slideContainer{
+    width: 1280px;
+    height: 600px;
+    margin: 0 auto;
+  }
 }
