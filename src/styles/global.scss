@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  // 공용 글씨체 수정할지..?
   font-family: 'Noto Sans KR', sans-serif;
+  // 하지만 이렇게 진행할 경우, Header쪽에서 background-color를 지정해주어야하는 문제가 발생.
+  // background-color: #f3f3f3;
 }
 
 ul {

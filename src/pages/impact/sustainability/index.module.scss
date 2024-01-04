@@ -2,14 +2,15 @@
   position: relative;
   margin-bottom: 20px;
 
-  > .banner {
+  .banner {
+    background: center;
+    background-image: url('../../../assets/images/sustainability.webp');
     margin: 0 auto;
     width: 1680px;
     height: 596px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: center;
     background-size: cover; // 배경 이미지가 컨테이너를 꽉 채우도록 설정
     background-repeat: no-repeat; // 이미지 반복 없음
 
@@ -41,5 +42,12 @@
       line-height: 26px;
       text-align: center;
     }
+  }
+  .doubleTitle {
+    margin-top: 120px;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    justify-content: center;
   }
 }

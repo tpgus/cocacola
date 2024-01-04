@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: 120px 0;
+
+  > .title {
+    text-align: center;
+    font-size: 38px;
+    line-height: 48px;
+  }
+  > .text {
+    margin-top: 32px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #505050;
+    text-align: center;
+  }
+  > .selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    cursor: pointer;
+
+    > .text {
+      font-weight: 700;
+    }
+    > .icon {
+      margin-left: 10px;
+      transition: transform 0.3s;
+
+      &.isOpen {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+  > .options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 0 auto;
+    padding: 24px;
+    width: 864px;
+    margin-top: 32px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    > .option {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      line-height: 26px;
+      color: #505050;
+      cursor: pointer;
+
+      > .text {
+        margin-left: 8px;
+      }
+    }
+  }
+  > .brands {
+    margin: 32px auto;
+    width: 864px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+  width: 33.333%;
+  padding-bottom: 33.333%;
+  /* width에 따른 1:1 비율 설정 */
+  cursor: pointer;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  > .card {
+    border-radius: 16px;
+    background-color: white;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > img {
+      width: 80%;
+      object-fit: cover;
+      /* 내용이 여기에 들어갑니다 */
+    }
+  }
+}

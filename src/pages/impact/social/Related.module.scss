@@ -1,0 +1,24 @@
+.container {
+  width: 560px;
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+
+  > img {
+    width: 100%;
+    object-fit: cover;
+  }
+  > .content {
+    padding: 32px 24px;
+
+    > p {
+      margin-top: 16px;
+    }
+    > a {
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 24px;
+      color: #6e6e6e;
+    }
+  }
+}

@@ -7,11 +7,7 @@ const cx = classNames.bind(styles);
 function TeaserContent({ teaserConent }) {
   return (
     <div className={cx('container')}>
-      <div
-        className={cx('background')}
-        style={{
-          backgroundImage: `linear-gradient(to right, rgba(0, 1, 1, 1), rgba(0, 0, 0, 0)), url(${teaserConent})`,
-        }}>
+      <div className={cx('background')}>
         <div className={cx('content')}>
           <div className={cx('textBox')}>
             <p className={cx('responsibility')}>
