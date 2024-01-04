@@ -2,9 +2,21 @@
   padding: 32px;
   position: relative;
 
-  > .slideContainer{
+  > .slideContainer {
     width: 1280px;
     height: 600px;
     margin: 0 auto;
+  }
+
+  > .effort {
+    display: block;
+    text-align: center;
+    margin-top: 120px;
+
+    // font-style 별도 지정 X
+    .effortTitle {
+      font-size: 38px;
+      line-height: 48px;
+    }
   }
 }

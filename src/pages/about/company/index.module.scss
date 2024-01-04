@@ -27,25 +27,4 @@
       gap: 24px;
     }
   }
-
-  > .effort {
-    display: block;
-    text-align: center;
-    margin-top: 120px;
-
-    // font-style 별도 지정 X
-    .effortTitle {
-      font-size: 38px;
-      line-height: 48px;
-    }
-
-    .effortText {
-      margin-top: 24px;
-      margin: 16px 0 0;
-      font-size: 16px;
-      font-weight: bolder;
-      line-height: 26px;
-      text-align: center;
-    }
-  }
 }
