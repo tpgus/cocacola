@@ -7,6 +7,7 @@ import brand1 from '../../../assets/images/brand1.webp';
 import brand2 from '../../../assets/images/brand2.webp';
 
 import Related from './Related';
+import Sustainable from './Sustainable';
 
 const cx = classNames.bind(styles);
 
@@ -35,6 +36,7 @@ const Page = () => {
         contentDescription="한국 코카-콜라가 설립된 이후 50여 년간 걸어온 여정, 그리고 앞으로 나아갈 미래"
         image={brand2}
       />
+      <Sustainable />
     </div>
   );
 };
