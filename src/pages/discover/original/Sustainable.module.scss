@@ -1,0 +1,19 @@
+.container {
+  position: relative;
+  margin-top: 100px;
+  text-align: -webkit-center;
+
+  .title {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+
+  .cardContainer {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}

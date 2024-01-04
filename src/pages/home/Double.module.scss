@@ -1,0 +1,96 @@
+.container {
+  position: relative; /* 상대 위치 설정 */
+  margin-top: 120px;
+
+  // reverse의 작동 원리
+  // reverse .campaign에서 배열 방향을 결정합니다.
+  // row-reverse로 인해서 flex가 반대로 움직입니다.
+
+  // 쉽게 얘기하면 좌측에서 우측으로 움직여야하지만,
+  // row-reverse로 인해서 우측에서 좌측으로 움직입니다.
+  &.reverse {
+    .campaign {
+      flex-direction: row-reverse;
+
+      // reverse이기 때문에, margin-left를 -10%를 주고
+      // campaign에서 보면 margin-right를 -10%를 줍니다.
+      .contentContainer {
+        margin-left: -10%;
+        margin-right: 0;
+      }
+
+      // 그 외 부분은 모두 공통으로 적용됩니다.
+    }
+  }
+
+  > .campaign {
+    display: flex;
+    margin: 120px auto 0;
+    max-width: 1120px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
+    position: relative;
+
+    > .contentContainer {
+      flex: 1;
+      padding: 64px 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 16px;
+      background-color: white;
+      box-shadow: 0 14px 18px rgba(0, 0, 0, 0.06);
+      //   여기
+      max-width: 600px;
+      position: relative;
+      z-index: 2;
+      margin-left: 0;
+      margin-right: -10%;
+
+      .contentTitle {
+        font-size: 24px;
+        line-height: 32px;
+      }
+      .contentDescription {
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 26px;
+      }
+      .contentLink {
+        margin-top: 250px;
+        max-width: 327px;
+        display: inline-block;
+        padding: 8px 16px;
+        border: 2px solid black;
+        border-radius: 24px;
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        background-color: transparent;
+
+        &:hover {
+          border-color: #6e6e6e;
+          color: #6e6e6e;
+        }
+      }
+    }
+
+    > .imageContainer {
+      margin-top: 80px;
+      flex: 1;
+      height: 512px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .campaignImage {
+        border-radius: 16px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
