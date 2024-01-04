@@ -12,7 +12,7 @@ const Double = ({ reverse, contentTitle, contentDescription, image }) => {
           <h3 className={cx('contentTitle')}>{contentTitle}</h3>
           <p className={cx('contentDescription')}>{contentDescription}</p>
           <a href="/" className={cx('contentLink')}>
-            글로벌 리포트 확인하기
+            더 보기
           </a>
         </div>
         <div className={cx('imageContainer')}>
